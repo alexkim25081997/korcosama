@@ -6,6 +6,52 @@
 <title>Сотрудничество — Корейская косметика оптом AMA</title>
 <meta name="description" content="Условия сотрудничества с AMA: оптовые поставки корейской косметики для магазинов, салонов и интернет-площадок.">
 <link rel="stylesheet" href="css/style.css">
+<style>
+  /* ===== Доп. стили для страницы "Сотрудничество" ===== */
+  .coop-lead{max-width:680px;margin:0 auto 36px;text-align:center;color:#55555a;font-size:18px;line-height:1.6}
+  .coop-hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+  .btn-secondary-ama{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:999px;border:1.5px solid #1d1d1f;color:#1d1d1f;text-decoration:none;font-weight:500;transition:all .25s ease}
+  .btn-secondary-ama:hover{background:#1d1d1f;color:#fff}
+
+  .coop-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1000px;margin:0 auto}
+  .stat-card{background:#fff;border-radius:18px;padding:28px 16px;text-align:center;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+  .stat-value{font-size:26px;font-weight:700;color:#333333;margin-bottom:6px}
+  .stat-label{font-size:14px;color:#777}
+
+  .order-flow{display:flex;align-items:flex-start;justify-content:center;gap:10px;flex-wrap:wrap;max-width:1100px;margin:0 auto}
+  .order-step{background:#fff;border-radius:18px;padding:26px 20px;text-align:center;width:220px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+  .order-step .order-num{width:36px;height:36px;border-radius:50%;background:#a07830;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-weight:600}
+  .order-step h4{margin:0 0 6px;font-size:16px}
+  .order-step p{margin:0;font-size:14px;color:#777;line-height:1.5}
+  .order-arrow{align-self:center;font-size:22px;color:#c9b18a;padding-top:42px}
+
+  .delivery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:900px;margin:0 auto}
+  .delivery-card{background:#fff;border-radius:20px;padding:32px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+  .delivery-card h3{margin:0 0 14px;font-size:19px;color:#1d1d1f}
+  .delivery-card ul{margin:0;padding:0;list-style:none}
+  .delivery-card li{padding:8px 0;border-top:1px solid #eee;font-size:15px;color:#555}
+  .delivery-card li:first-child{border-top:none}
+
+  .payment-box{max-width:560px;margin:0 auto;background:#fff;border-radius:20px;padding:32px 36px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+  .payment-box h3{margin:0 0 18px;font-size:19px}
+  .payment-row{display:flex;justify-content:space-between;padding:9px 0;border-top:1px solid #eee;font-size:14.5px}
+  .payment-row:first-child{border-top:none}
+  .payment-row span:first-child{color:#888}
+  .payment-row span:last-child{font-weight:600;color:#1d1d1f;text-align:right}
+
+  .price-howto{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:900px;margin:0 auto}
+  .price-howto .ama-feature p small{display:block;margin-top:10px;color:#999;font-size:13px;line-height:1.5}
+
+  .coop-contact-block{max-width:640px;margin:0 auto;text-align:center;background:#fff;border-radius:24px;padding:48px 32px;box-shadow:0 6px 24px rgba(0,0,0,.06)}
+  .coop-contact-block .contact-line{font-size:15px;color:#777;margin-bottom:24px}
+  .coop-contact-block .contact-line a{color:#a07830;text-decoration:none}
+
+  @media (max-width: 860px){
+    .coop-stats{grid-template-columns:repeat(2,1fr)}
+    .delivery-grid,.price-howto{grid-template-columns:1fr}
+    .order-arrow{display:none}
+  }
+</style>
 </head>
 <body>
 
@@ -47,49 +93,127 @@
   <a href="index.html#ama-reviews">Отзывы</a>
 </div>
 
-<section class="ama-section">
-  <h2 class="ama-section-title reveal">Как мы работаем</h2>
-  <div class="coop-steps">
-    <div class="ama-feature reveal reveal-delay-1">
-      <div class="num">01</div>
-      <h3>Заявка</h3>
-      <p>Свяжитесь с нами через WhatsApp или email — расскажите, какой ассортимент вас интересует и в каком объёме.</p>
-    </div>
-    <div class="ama-feature reveal reveal-delay-2">
-      <div class="num">02</div>
-      <h3>Расчёт и условия</h3>
-      <p>Мы подбираем актуальный прайс-лист, рассчитываем стоимость доставки и согласовываем условия оплаты (SWIFT).</p>
-    </div>
-    <div class="ama-feature reveal reveal-delay-3">
-      <div class="num">03</div>
-      <h3>Поставка</h3>
-      <p>После подтверждения заказа товар отправляется напрямую из Кореи. Минимальная сумма доставки — от 1000$.</p>
-    </div>
-  </div>
+<!-- ===================== HERO ===================== -->
+<section class="ama-section" style="padding-bottom:0;">
+  <h2 class="ama-section-title reveal">Сотрудничество</h2>
+  <p class="coop-lead reveal">Прямые поставки из Кореи. Минимальная сумма заказа — <strong>1000$</strong>. Работаем с оптовыми покупателями по всему миру.</p>
+</section>
 
-  <div class="coop-cta reveal">
-    <h2>Готовы начать сотрудничество?</h2>
-    <p>Напишите нам в WhatsApp — ответим в течение дня и поможем подобрать ассортимент.</p>
-    <a class="btn-primary-ama" href="https://wa.me/821036293163" target="_blank" rel="noopener">Написать в WhatsApp</a>
+<!-- ===================== КЛЮЧЕВЫЕ ЦИФРЫ ===================== -->
+<section class="ama-section">
+  <div class="coop-stats reveal reveal-delay-1">
+    <div class="stat-card">
+      <div class="stat-value">1000$</div>
+      <div class="stat-label">Мин. заказ</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">3–10 дней</div>
+      <div class="stat-label">Обработка заказа</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">EMC / ТС</div>
+      <div class="stat-label">Доставка</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value">SWIFT</div>
+      <div class="stat-label">Оплата</div>
+    </div>
   </div>
 </section>
 
-<section style="background:#f5f5f7;">
-  <div class="ama-section" style="padding-top:56px; padding-bottom:56px;">
-    <h2 class="ama-section-title reveal">Кому подходит сотрудничество</h2>
-    <div class="ama-features" style="margin-top:0;">
-      <div class="ama-feature reveal reveal-delay-1" style="background:#fff;">
-        <h3>Магазины косметики</h3>
-        <p>Расширение ассортимента качественной корейской продукцией по оптовым ценам.</p>
-      </div>
-      <div class="ama-feature reveal reveal-delay-2" style="background:#fff;">
-        <h3>Салоны красоты</h3>
-        <p>Профессиональные линейки для использования и перепродажи клиентам.</p>
-      </div>
-      <div class="ama-feature reveal reveal-delay-3" style="background:#fff;">
-        <h3>Интернет-площадки</h3>
-        <p>Поставки для маркетплейсов и онлайн-магазинов с гарантией подлинности.</p>
-      </div>
+<!-- ===================== КАК ПОЛУЧИТЬ ПРАЙС-ЛИСТ ===================== -->
+<section class="ama-section" style="background:#f5f5f7;">
+  <h2 class="ama-section-title reveal">Как получить прайс-лист</h2>
+  <div class="price-howto">
+    <div class="ama-feature reveal reveal-delay-1">
+      <div class="num">01</div>
+      <h3>WhatsApp — Татьяна</h3>
+      <p style="margin-bottom:6px;">+82 10-3629-3163</p>
+      <p style="margin-bottom:16px;">Напишите напрямую, указав с какого вы региона и из каких источников узнали о нас.</p>
+      <a class="btn-primary-ama" href="https://wa.me/821036293163" target="_blank" rel="noopener">Написать в WhatsApp</a>
+    </div>
+    <div class="ama-feature reveal reveal-delay-2">
+      <div class="num">02</div>
+      <h3>По электронной почте</h3>
+      <p style="margin-bottom:6px;">apexscorp2@gmail.com</p>
+      <p style="margin-bottom:16px;">Напишите нам, указав с какого вы региона и из каких источников узнали о нас.</p>
+      <a class="btn-secondary-ama" href="https://mail.google.com/mail/?view=cm&fs=1&to=apexscorp2@gmail.com" target="_blank" rel="noopener">Написать на Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ОФОРМЛЕНИЕ ЗАКАЗА ===================== -->
+<section class="ama-section">
+  <h2 class="ama-section-title reveal">Оформление заказа</h2>
+  <div class="order-flow reveal">
+    <div class="order-step">
+      <div class="order-num">1</div>
+      <h4>Укажите количество</h4>
+      <p>В прайсе укажите кол-во по каждой позиции</p>
+    </div>
+    <div class="order-arrow">&#8594;</div>
+    <div class="order-step">
+      <div class="order-num">2</div>
+      <h4>Отправьте прайс</h4>
+      <p>Заполненный прайс отправьте нам на e-mail</p>
+    </div>
+    <div class="order-arrow">&#8594;</div>
+    <div class="order-step">
+      <div class="order-num">3</div>
+      <h4>Обработка заказа</h4>
+      <p>3–10 дней, выставляем окончательную сумму</p>
+    </div>
+    <div class="order-arrow">&#8594;</div>
+    <div class="order-step">
+      <div class="order-num">4</div>
+      <h4>Отправка товара</h4>
+      <p>После предоплаты отправляем товар</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ДОСТАВКА И ОПЛАТА ===================== -->
+<section class="ama-section" style="background:#f5f5f7;">
+  <h2 class="ama-section-title reveal">Доставка</h2>
+  <div class="delivery-grid reveal reveal-delay-1">
+    <div class="delivery-card">
+      <h3>EMC / ТС</h3>
+      <ul>
+        <li>Срок: 3–10 дней</li>
+        <li>Стоимость: 8–10$ за кг</li>
+        <li>Доставка до адресата</li>
+      </ul>
+    </div>
+    <div class="delivery-card">
+      <h3>Транспортная компания</h3>
+      <ul>
+        <li>От 50 кг</li>
+        <li>Срок: 7–10 дней</li>
+        <li>Стоимость: 6–7$ за кг</li>
+        <li>Оплата на месте получения товара</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="ama-section">
+  <h2 class="ama-section-title reveal">Оплата</h2>
+  <div class="payment-box reveal reveal-delay-1">
+    <h3>SWIFT / Банковский перевод</h3>
+    <div class="payment-row"><span>Компания</span><span>Apexs Corp.</span></div>
+    <div class="payment-row"><span>Банк</span><span>Industrial Bank of Korea</span></div>
+    <div class="payment-row"><span>Счёт</span><span>031-085314-56-00016</span></div>
+    <div class="payment-row"><span>SWIFT-код</span><span>IBKOKRSE</span></div>
+  </div>
+</section>
+
+<!-- ===================== СВЯЖИТЕСЬ С НАМИ ===================== -->
+<section class="ama-section">
+  <h2 class="ama-section-title reveal">Свяжитесь с нами</h2>
+  <div class="coop-contact-block reveal reveal-delay-1">
+    <div class="coop-hero-actions" style="margin-bottom:0;">
+      <a class="btn-primary-ama" href="https://wa.me/821036293163?text=Здравствуйте,%20хочу%20получить%20прайс-лист" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      <a class="btn-secondary-ama" href="https://mail.google.com/mail/?view=cm&fs=1&to=apexscorp2@gmail.com" target="_blank" rel="noopener">Написать на Email</a>
     </div>
   </div>
 </section>
@@ -98,7 +222,7 @@
   <section class="ama-footer-info">
     <div>
       <div class="ama-fi-logo">АМА</div>
-      <p class="ama-fi-text">E-mail: <a href="mailto:apexscorp@gmail.com">apexscorp@gmail.com</a><br>WhatsApp: <a href="https://wa.me/821036293163" target="_blank" rel="noopener">+82 10-3629-3163</a></p>
+      <p class="ama-fi-text">E-mail: <a href="mailto:apexscorp2@gmail.com">apexscorp2@gmail.com</a><br>WhatsApp: <a href="https://wa.me/821036293163" target="_blank" rel="noopener">+82 10-3629-3163</a></p>
     </div>
     <div>
       <p class="ama-fi-title">Навигация</p>

@@ -449,3 +449,44 @@ document.addEventListener('DOMContentLoaded', function () {
     wrap.appendChild(p);
   }
 });
+
+/* ===========================================================
+   КОПИРОВАНИЕ EMAIL В БУФЕР ОБМЕНА
+   (на случай если у пользователя не настроен почтовый клиент
+   и mailto: ссылки не открываются)
+   =========================================================== */
+function amaCopyEmail(email, btn) {
+  function showCopied() {
+    if (!btn) return;
+    var original = btn.getAttribute('data-original-text') || btn.textContent;
+    btn.setAttribute('data-original-text', original);
+    btn.textContent = 'Email скопирован!';
+    btn.classList.add('is-copied');
+    clearTimeout(btn._amaCopyTimeout);
+    btn._amaCopyTimeout = setTimeout(function () {
+      btn.textContent = original;
+      btn.classList.remove('is-copied');
+    }, 2000);
+  }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(email).then(showCopied).catch(function () {
+      amaFallbackCopy(email);
+      showCopied();
+    });
+  } else {
+    amaFallbackCopy(email);
+    showCopied();
+  }
+}
+
+function amaFallbackCopy(text) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); } catch (e) {}
+  document.body.removeChild(ta);
+}

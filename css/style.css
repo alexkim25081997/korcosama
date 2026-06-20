@@ -455,21 +455,22 @@ ul {
 
 .ama-hero-title {
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 200;
   color: #fff;
-  letter-spacing: 1px;
+  letter-spacing: 4px;
   line-height: 1;
 }
 
 .ama-hero-title strong {
-  font-weight: 400;
+  font-weight: 300;
   color: #ffe0ec;
 }
 
 .ama-hero-subtitle {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.95);
-  letter-spacing: 2px;
+  font-weight: 300;
+  letter-spacing: 4px;
   margin-top: 8px;
 }
 
@@ -562,14 +563,24 @@ ul {
   letter-spacing: 0;
 }
 
+#ama-slider .ama-section-title,
+#ama-reviews .ama-section-title {
+  color: #b0b0b5;
+  font-size: 26px;
+  font-weight: 500;
+}
+
 #ama-slider {
   padding-left: 0;
   padding-right: 0;
+  padding-top: 56px;
+  padding-bottom: 56px;
   overflow: hidden;
 }
 
 #ama-slider .ama-section-title {
   padding: 0 48px;
+  margin-bottom: 80px;
 }
 
 .brand-slider {
@@ -877,6 +888,10 @@ ul {
   box-sizing: border-box;
 }
 
+.ama-about .ama-section {
+  padding-top: 56px;
+}
+
 .ama-about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -905,10 +920,11 @@ ul {
 }
 
 .ama-about-text h2 {
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 500;
   margin-bottom: 24px;
   letter-spacing: -.02em;
+  color: #b0b0b5;
 }
 
 .ama-about-text p {
@@ -980,6 +996,8 @@ ul {
   text-align: center;
   width: 100%;
   box-sizing: border-box;
+  padding-top: 56px;
+  padding-bottom: 200px;
 }
 
 .ama-reviews p.lead {
@@ -1186,6 +1204,33 @@ ul {
 .btn-primary-ama:hover {
   background: #b8305f;
   transform: translateY(-1px);
+}
+
+.btn-copy-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1.5px solid rgba(0, 0, 0, .15);
+  color: rgba(0, 0, 0, .55);
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .2s ease;
+  font-family: inherit;
+}
+
+.btn-copy-email:hover {
+  border-color: rgba(0, 0, 0, .35);
+  color: #1d1d1f;
+}
+
+.btn-copy-email.is-copied {
+  border-color: #a07830;
+  color: #a07830;
+  background: rgba(160, 120, 48, .06);
 }
 
 /* ===========================================================
